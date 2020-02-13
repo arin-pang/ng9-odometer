@@ -13,7 +13,6 @@ npm install ng9-odometer --save
 - [Setup](#setup)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Demo](#demo)
 
 ## Setup
 
@@ -147,30 +146,6 @@ export class MainElementComponent {
 
 If you add both, the `[config]` and any independent configuration, the independent config will overwrite the `[config]` object.
 
-## Demo
-
-The [demo](demo) subfolder contains a project created with angular-cli that has been adapted to showcase the functionality of ng9-odometer.
-To execute the code follow this steps:
-
-```
-// Go the the demo folder
-cd demo
-
-// Install dependencies
-npm install
-
-// Run the server
-ng serve
-```
-
-Then go to [http://localhost:4200](http://localhost:4200/) to check the demo running.
-
-## TODO:
-
-* Update to Angular4
-* Add tests to the library and demo
-* Add new themes
-* Create a Directive also
 
 ## License
 
