@@ -6,10 +6,10 @@
 
 import * as _ from 'lodash';
 import { Component, ViewEncapsulation, Input, OnInit, OnDestroy, OnChanges, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
+import { Observable } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { OdometerModel } from './odometer.model';
-import { Ng2OdometerConfig, Ng2OdometerConfigModel } from './odometer.config';
+import { Ng9OdometerConfig, Ng9OdometerConfigModel } from './odometer.config';
 import {
     CAR_THEME,
     DEFAULT_THEME,
@@ -25,7 +25,7 @@ import {
 const Odometer = require('odometer');
 
 @Component({
-    selector: 'ng2-odometer',
+    selector: 'ng9-odometer',
     encapsulation: ViewEncapsulation.None,
     styles: [
         CAR_THEME,
@@ -38,7 +38,7 @@ const Odometer = require('odometer');
         `
             .odometer,
             .odometer-inside,
-            .odometer-digit,
+            .npm-digit,
             .odometer-digit-spacer,
             .odometer-digit-inner,
             .odometer-ribbon,
@@ -53,12 +53,12 @@ const Odometer = require('odometer');
     ],
     template: `<div #container></div>`
 })
-export class Ng2OdometerComponent implements OnInit, OnDestroy, OnChanges, AfterViewInit {
+export class Ng9OdometerComponent implements OnInit, OnDestroy, OnChanges, AfterViewInit {
     private subscription: Subscription;
     private odometer: OdometerModel;
     @ViewChild('container', { read: ElementRef }) container: ElementRef;
     @Input() number: number; // Required
-    @Input() config: Ng2OdometerConfigModel = {};
+    @Input() config: Ng9OdometerConfigModel = {};
     @Input() observable: Observable<boolean> = undefined;
 
     // Individual configuration attributes
@@ -101,7 +101,7 @@ export class Ng2OdometerComponent implements OnInit, OnDestroy, OnChanges, After
     }
 
     private initConfig() {
-        this.config = _.defaults(this.config, new Ng2OdometerConfig());
+        this.config = _.defaults(this.config, new Ng9OdometerConfig());
 
         // Animation
         if (!_.isUndefined(this.animation)) {

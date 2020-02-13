@@ -1,11 +1,11 @@
-# ng2-odometer [![npm version](https://img.shields.io/npm/v/ng2-odometer.svg?style=flat)](https://www.npmjs.com/package/ng2-odometer) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+# ng9-odometer [![npm version](https://img.shields.io/npm/v/ng9-odometer.svg?style=flat)](https://www.npmjs.com/package/ng9-odometer) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-Odometer for Angular2 that wraps HubSpot's Odometer [http://github.hubspot.com/odometer/docs/welcome/](http://github.hubspot.com/odometer/docs/welcome/)
+Odometer for Angular9 that wraps HubSpot's Odometer [http://github.hubspot.com/odometer/docs/welcome/](http://github.hubspot.com/odometer/docs/welcome/)
 
 ## Quick Start
 
 ```
-npm install ng2-odometer --save
+npm install ng9-odometer --save
 ```
 
 ## Table of contents
@@ -19,21 +19,21 @@ npm install ng2-odometer --save
 
 First you need to install the npm module:
 ```sh
-npm install ng2-odometer --save
+npm install ng9-odometer --save
 ```
 
-Then add the `Ng2OdometerModule` to the imports array of your application module.
+Then add the `Ng9OdometerModule` to the imports array of your application module.
 
 ```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Ng2OdometerModule } from 'ng2-odometer'; // <-- import the module
+import { Ng9OdometerModule } from 'ng9-odometer'; // <-- import the module
 import { AppComponent} from './app.component';
 
 @NgModule({
     imports: [
       BrowserModule, 
-      Ng2OdometerModule.forRoot() // <-- include it in your app module
+      Ng9OdometerModule.forRoot() // <-- include it in your app module
     ], 
     declarations: [AppComponent],
     bootstrap: [AppComponent]
@@ -45,7 +45,7 @@ export class AppModule {
 
 ## Usage 
 
-Use the `<ng2-odometer></ng2-odometer>` component to create an odometer. The `number` is required attribute. 
+Use the `<ng9-odometer></ng9-odometer>` component to create an odometer. The `number` is required attribute. 
 The `number` represents the limit at which the odometer will travel. The `config` an object with the configuration properties, this is NOT required. 
 
 ```js
@@ -53,7 +53,7 @@ The `number` represents the limit at which the odometer will travel. The `config
    selector: 'main-element',
    template: `
         ...
-        <ng2-odometer [number]="number" [config]="{ }"></ng2-odometer>
+        <ng9-odometer [number]="number" [config]="{ }"></ng9-odometer>
         <!-- Further content here -->
         ...
    `
@@ -70,7 +70,7 @@ When on manual mode (`[config]="{ auto: false }"`), you can update the `number` 
    selector: 'main-element',
    template: `
         ...
-        <ng2-odometer [number]="number" [config]="{ auto: false }" [observable]="observable"></ng2-odometer>
+        <ng9-odometer [number]="number" [config]="{ auto: false }" [observable]="observable"></ng9-odometer>
         <!-- Further content here -->
         ...
    `
@@ -106,20 +106,20 @@ The component accepts either a `[config]="{ ... }"` attribute with an object wit
    selector: 'main-element',
    template: `
         ...
-        <ng2-odometer 
+        <ng9-odometer 
             [number]="1000" 
             [observable]="observable" 
-            [config]="config"></ng2-odometer>
+            [config]="config"></ng9-odometer>
         <!-- Further content here -->
 
-        <ng2-odometer 
+        <ng9-odometer 
             [number]="1000" 
             [observable]="observable"
             [config]="{ animation: 'count', format: 'd', theme: 'car', value: 50, auto: false }">
-        </ng2-odometer>
+        </ng9-odometer>
         <!-- Further content here -->
 
-        <ng2-odometer 
+        <ng9-odometer 
             [number]="1000"  
             [observable]="observable"
             [animation]="'count'"
@@ -127,7 +127,7 @@ The component accepts either a `[config]="{ ... }"` attribute with an object wit
             [theme]="'car'"
             [value]="0",
             [auto]="false">
-        </ng2-odometer>
+        </ng9-odometer>
         <!-- Further content here -->
         ...
    `
@@ -149,7 +149,7 @@ If you add both, the `[config]` and any independent configuration, the independe
 
 ## Demo
 
-The [demo](demo) subfolder contains a project created with angular-cli that has been adapted to showcase the functionality of ng2-odometer.
+The [demo](demo) subfolder contains a project created with angular-cli that has been adapted to showcase the functionality of ng9-odometer.
 To execute the code follow this steps:
 
 ```
