@@ -1,5 +1,6 @@
 {
   "name": "ng9-odometer_dev",
+  "description": "Odometer for Angular9",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +9,17 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arin-pang/ng9-odometer"
   },
+  "bugs": {
+    "url": "https://github.com/arin-pang/ng9-odometer/issues"
+  },
+  "homepage": "https://github.com/arin-pang/ng9-odometer",
+  "author": "Jose Andres <jmandreslopez@gmail.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.1",
