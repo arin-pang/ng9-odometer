@@ -1,0 +1,13 @@
+.odometer,
+.odometer-inside,
+.npm-digit,
+.odometer-digit-spacer,
+.odometer-digit-inner,
+.odometer-ribbon,
+.odometer-ribbon-inner,
+.odometer-value,
+.odometer-formatting-mark {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}

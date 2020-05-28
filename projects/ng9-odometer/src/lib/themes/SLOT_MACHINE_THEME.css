@@ -1,9 +1,7 @@
 /**
- * Created by Jose Andres on 02.23.17
- */
-
-export const SLOT_MACHINE_THEME = `
-    @import url("//fonts.googleapis.com/css?family=Rye");
+* Created by Jose Andres on 02.23.17
+*/
+@import url("//fonts.googleapis.com/css?family=Rye");
     .odometer.odometer-auto-theme,
     .odometer.odometer-theme-slot-machine {
         display: inline-block;
@@ -161,4 +159,3 @@ export const SLOT_MACHINE_THEME = `
         right: 0;
         text-align: center;
     }
-`;

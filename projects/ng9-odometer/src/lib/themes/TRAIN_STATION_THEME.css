@@ -1,9 +1,7 @@
 /**
- * Created by Jose Andres on 02.23.17
- */
-
-export const TRAIN_STATION_THEME = `
-    @import url("//fonts.googleapis.com/css?family=Economica");
+* Created by Jose Andres on 02.23.17
+*/
+@import url("//fonts.googleapis.com/css?family=Economica");
     .odometer.odometer-auto-theme,
     .odometer.odometer-theme-train-station {
         display: inline-block;
@@ -129,4 +127,3 @@ export const TRAIN_STATION_THEME = `
     .odometer.odometer-theme-train-station .odometer-digit .odometer-digit-inner {
         left: 0.15em;
     }
-`;
