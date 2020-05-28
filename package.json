@@ -8,8 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
-  },  
+    "e2e": "ng e2e",
+    "ng-packagr": "css-to-ts --rootDir './projects/ng9-odometer/src/lib/themes' --outDir './projects/ng9-odometer/src/lib/themes' --pattern '*.css' --header 'File generated with css-to-ts' && ng-packagr -p projects/ng9-odometer/ng-package.json"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/arin-pang/ng9-odometer"
@@ -44,9 +45,10 @@
     "@angular/language-service": "~9.0.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.12.27",
     "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.27",
     "codelyzer": "^5.1.2",
+    "css-to-ts": "^1.0.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.3.0",
