@@ -5,6 +5,11 @@
   "projects": {
     "ng9-odometer": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "css"
+        }
+      },
       "root": "projects/ng9-odometer",
       "sourceRoot": "projects/ng9-odometer/src",
       "prefix": "lib",

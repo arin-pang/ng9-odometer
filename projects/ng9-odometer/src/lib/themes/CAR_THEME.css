@@ -1,8 +1,8 @@
-/**
- * Created by Jose Andres on 02.23.17
- */
 
-export const CAR_THEME = `
+/**
+* Created by Jose Andres on 02.23.17
+*/
+    
     @import url("//fonts.googleapis.com/css?family=Arimo");
     .odometer.odometer-auto-theme,
     .odometer.odometer-theme-car {
@@ -154,4 +154,3 @@ export const CAR_THEME = `
         -o-transition-timing-function: linear;
         transition-timing-function: linear;
     }
-`;

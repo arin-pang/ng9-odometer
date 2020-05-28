@@ -1,3 +1,4 @@
+// tslint:disable-next-line: no-reference
 ///<reference path="odometer.d.ts" />
 
 /**
@@ -10,15 +11,6 @@ import { Observable } from 'rxjs';
 import { Subscription } from 'rxjs';
 import { OdometerModel } from './odometer.model';
 import { Ng9OdometerConfig, Ng9OdometerConfigModel } from './odometer.config';
-import {
-    CAR_THEME,
-    DEFAULT_THEME,
-    DIGITAL_THEME,
-    MINIMAL_THEME,
-    PLAZA_THEME,
-    SLOT_MACHINE_THEME,
-    TRAIN_STATION_THEME,
- } from './themes';
 
 // HubSpot's Oodometer
 // https://github.com/HubSpot/odometer
@@ -27,29 +19,15 @@ const Odometer = require('odometer');
 @Component({
     selector: 'ng9-odometer',
     encapsulation: ViewEncapsulation.None,
-    styles: [
-        CAR_THEME,
-        DEFAULT_THEME,
-        DIGITAL_THEME,
-        MINIMAL_THEME,
-        PLAZA_THEME,
-        SLOT_MACHINE_THEME,
-        TRAIN_STATION_THEME,
-        `
-            .odometer,
-            .odometer-inside,
-            .npm-digit,
-            .odometer-digit-spacer,
-            .odometer-digit-inner,
-            .odometer-ribbon,
-            .odometer-ribbon-inner,
-            .odometer-value,
-            .odometer-formatting-mark {
-                color: inherit;
-                font-size: inherit;
-                font-family: inherit;
-            }
-        `,
+    styleUrls: [
+        'themes/CAR_THEME.css',
+        'themes/DEFAULT_THEME.css',
+        'themes/DIGITAL_THEME.css',
+        'themes/MINIMAL_THEME.css',
+        'themes/PLAZA_THEME.css',
+        'themes/SLOT_MACHINE_THEME.css',
+        'themes/TRAIN_STATION_THEME.css',
+        'ng9-odometer.component.css'
     ],
     template: `<div #container></div>`
 })
