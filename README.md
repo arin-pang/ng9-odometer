@@ -9,10 +9,15 @@ npm install ng9-odometer --save
 ```
 
 ## Table of contents
-
+- [Demo](#Demo)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Configuration](#configuration)
+
+## Demo
+ng9-odometer-demo Stackblitz 
+- [Demo](https://ng9-odometer-demo.stackblitz.io)
+- [Editor](https://stackblitz.com/edit/ng9-odometer-demo)
 
 ## Setup
 
